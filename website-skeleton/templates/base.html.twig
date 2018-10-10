@@ -8,9 +8,26 @@
         {% endblock %}
     </head>
     <body>
+	
+		</br>
+		<div class="container">
+			<div>
+			<a href="{{url('query')}}"><button type="button" class="btn btn-secondary btn-dark btn-block"> Alien </button> </a>
+			</br>
+			<a href="{{url('premier' , { 'movies' : 'Lord'}) }}"><button type="button" class="btn btn-secondary btn-dark btn-block"> Lord </button> </a>
+		</br>
+		</br>
+			</div>
+	</div>
+
         {% block body %}{% endblock %}
+		
+
+		
         {% block javascripts %}
+		
           <script src=""{{ asset ('assets/js/bootstrap.js') }}
+		  
         {% endblock %}
     </body>
 </html>

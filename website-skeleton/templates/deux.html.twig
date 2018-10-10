@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+                        <div class="card  col-5" style="width: 18rem;">
+                            <img src="{{ movie.Poster }}">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>{{ movie.Title}}</b></h5>
+                                <p class="card-text">{{ movie.Plot}}</p>
+                                <p class="card-text">{{ movie.Year}} - {{ movie.Runtime}}</p>
+                                <b><p class="card-text">Genre : </b> {{ movie.Genre}}</p>
+                                <b><p class="card-text">Note : </b> {{ movie.imdbRating}}/10</p>
+								</br>
+								<a>Revenir sur la page précédente</a>
+                            </div>
+                        </div>
+        </div>
+    </div>
+{% endblock %}
